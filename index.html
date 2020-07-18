@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<title>JavaScript Simple Login System</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="header-nav">
+				<div class="container">
+					<div class="nav-name">Bank System</div>
+					<span id="loginLogo" class="glyphicon glyphicon-user">User</span>
+				</div>
+			</nav>
+		</header>
+		<form class="sign-form" id="sign-form">
+			<label class="sign">Sign In</label>
+			<input type="text" id="username" placeholder="Username" required>
+			<input type="password" id="password" placeholder="Password" required>
+			<button type="button" class="button" id="button" onclick="login()">Login</button>
+			<div class="message">Do you have an account? <a href="#">Sign Up</a></div>
+		</form>
+		<form class="sign-form" id="sign-form" style="display: none;">
+			<label class="sign">Sign Up</label>
+			<input type="text" id="cm-username" placeholder="Username" required>
+			<input type="password" id="my-password" placeholder="Password" required>
+			<input type="password" id="cm-password" placeholder=" Comfirm Password" required>
+			<button type="button" class="cm-button" onclick="signUp()">Sign Up</button>
+		</form>
+		<div id="information" class="detail" style="display: none;">
+			<h2 class="dash-h">Dashboard</h2>
+			<div class="btn-class">
+				<button id="btn-balance">Check Balance</button>
+				<button id="btn-insert">Insert</button>
+				<button id="btn-withdraw">Withdraw</button>
+				<button id="btn-transfer">Online Transfer</button>
+				<button id="btn-transaction">Check Transaction</button>
+			</div>
+			<div class="my-info" id="my-balance">
+				<div class="dash-info" id="infoname"></div>
+				<div class="dash-id" id="balance"></div>
+			</div>
+			<div class="my-insert" id="my-insert" style="display: none;">
+				<div class="insert-name"> Insert Ammount :</div>
+				<input type="text" name="insert" id="insert" required>
+				<button type="submit" class="insert-btn" value="submit" onclick="insert()">Enter</button>
+			</div>
+			<div class="my-insert" id="my-withdraw" style="display: none;">
+				<div class="withdraw-name"> Withdraw Ammount :</div>
+				<input type="text" name="withdraw" id="withdraw" required>
+				<button type="submit" class="withdraw-btn" value="submit" onclick="withdraw()">Enter</button>
+			</div>
+			<div class="my-insert" id="my-transfer" style="display: none;">
+				<div class="transfer-name"> Participant Name :</div>
+				<input type="text" name="par-name" id="par-name" required>
+				<div class="transfer-name"> Transfer Ammount :</div>
+				<input type="text" name="par-with" id="par-with" required>
+				<select id="type">
+					<option value="int">Instant transfer</option>
+					<option value="nor">Normal transfer</option>
+				</select>
+				<button type="submit" class="transfer-btn" value="submit" onclick="transfer()">Enter</button>
+			</div>
+			<div class="my-insert" id="my-transaction" style="display: none;">
+				<div class="trans-name" id="trans-name">adsadds</div>
+				<div class="trans-ammount" id="trans-ammount">sadsads</div>
+				<div class="trans-type" id="trans-type">dasdsd</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>
+		$('.message a').click(function(){
+			$('form').animate({height:"toggle",opacity:"toggle"}, "slow");
+		});
+		$('.sign-form .cm-button').click(function(){
+			$('form').animate({height:"toggle",opacity:"toggle"}, "slow");
+		});
+	</script>
+	</body>
+</html>

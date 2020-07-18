@@ -1,0 +1,231 @@
+/* start header*/
+.header-nav{
+	width: 100%;
+	height: 80px;
+	background: #446EF4;
+	font-size: 25px;
+}
+.nav-name{
+	float: left;
+	font-weight: bold;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+#loginLogo{
+	margin-left: 50%;
+	margin-top: 20px;
+}
+.sign-form{
+	margin: auto;
+	margin-top: 8%;
+	width: 250px;
+	height: 350px;
+	background: #D8D8DA;
+	text-align: center;
+}
+.sign{
+	width: 100%;
+	height: 50px;
+	background: #446EF4;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+/* end header*/
+
+/* start sign in page*/
+#username, #password{
+	margin-top: 30px;
+	width: 180px;
+	height: 40px;
+	text-align: center;
+	border-radius: 24px;
+	border-width: 0;
+	border: 2px solid #446EF4;
+	box-shadow: 0 0 20px 9px #446EF4;
+	display: block;
+	margin-left: 35px;
+}
+#username:focus, #password:focus{
+	outline: none;
+}
+#username:hover, #password:hover{
+	width: 200px;
+}
+.button{
+	margin-top: 25%;
+	border-radius: 24px;
+	width: 60px;
+	border-width: 0;
+	border: 2px solid #446EF4;
+}
+.button:focus{
+	outline: none;
+}
+.button:active{
+	width: 50px;
+}
+.message{
+	margin-top: 30px;
+}
+.message a{
+	text-decoration: none;
+}
+/* end sign in page*/
+
+/* start sign up page*/
+#cm-username, #cm-password, #my-password{
+	margin-top: 30px;
+	width: 180px;
+	height: 40px;
+	text-align: center;
+	border-radius: 24px;
+	border-width: 0;
+	border: 2px solid #446EF4;
+	box-shadow: 0 0 20px 9px #446EF4;
+	display: block;
+	margin-left: 35px;
+}
+#cm-username:focus, #cm-password:focus, #my-password:focus{
+	outline: none;
+}
+#cm-username:hover, #cm-password:hover, #my-password:hover{
+	width: 200px;
+}
+.cm-button{
+	margin-top: 18%;
+	border-radius: 24px;
+	height: 30px;
+	width: 80px;
+	border-width: 0;
+	border: 2px solid #446EF4;
+}
+.cm-button:focus{
+	outline: none;
+}
+.cm-button:active{
+	width: 70px;
+}
+/* end sign up page*/
+
+/* start dashboard*/
+.detail{
+	width: 600px;
+	height: 400px;
+	border: 2px solid black;
+	margin: auto;
+	margin-top: 50px;
+}
+.dash-h{
+	width: 100%;
+	background-color: #446EF4;
+	height: 40px;
+	text-align: center;
+	padding-top: 5px;
+}
+.btn-class{
+	width: 230px;
+	float: left;
+}
+.btn-class button{
+	width: 200px;
+	height: 50px;
+	background: transparent;
+	border-width: 0;
+	border: 1px solid black; 
+	border-left: none;
+	margin-bottom: 0.5px;
+
+}
+.btn-class button:nth-child(even){
+	background-color: #D7DDD8;
+}
+#btn-balance{
+	margin-top: 25px;
+}
+#btn-withdraw{
+	margin-bottom: 1px;
+}
+.btn-class button:hover{
+	width: 220px;
+}
+/* end dashboard*/
+
+/* start balance page*/
+.my-info{
+	margin-left: 30%;
+	margin-top: 15%;
+}
+.dash-info, .dash-id{
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* start insert page*/
+.my-insert{
+	margin-top: 15%;
+	margin-left: 50%;
+	font-size: 20px;
+}
+.insert-name{
+	margin-bottom: 20px;
+}
+#insert{
+	display: block;
+	margin-bottom: 20px;
+}
+.insert-btn{
+	border-radius: 5px;
+	border-width: 0;
+	border: 2px solid black;
+	width: 60px;
+}
+.insert-btn:active{
+	width: 50px;
+}
+
+/* start withdraw page*/
+.withdraw-name{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+#withdraw{
+	display: block;
+	margin-bottom: 20px;
+}
+.withdraw-btn{
+	border-radius: 5px;
+	border-width: 0;
+	border: 2px solid black;
+	width: 60px;
+}
+.withdraw-btn:active{
+	width: 50px;
+}
+
+/* start transfer page*/
+#type{
+	height: 25px;
+	margin-right: 10px;
+}
+.transfer-btn{
+	border-radius: 5px;
+	border-width: 0;
+	border: 2px solid black;
+	width: 60px;
+}
+.transfer-btn:active{
+	width: 50px;
+}
+#my-transfer input{
+	margin-bottom: 10px;
+}
+
+/* start transaction page*/
+#my-transaction{
+	font-size: 20px;
+}
+.trans-name, .trans-ammount{
+	margin-bottom: 10px;
+}
